@@ -8,7 +8,7 @@
 
 **Server:** Microcontroller ESP32 NodeMCU DevKit v1
 
-**Database:** NeonDBc(PostgreSQL)
+**Database:** NeonDB (PostgreSQL)
 
 **Hardware:** HX711, 4 Load Cells
 
