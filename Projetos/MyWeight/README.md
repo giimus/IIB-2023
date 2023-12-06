@@ -6,7 +6,7 @@
 
 **Client:** Next.js 14, React, TailwindCSS, ShadcnUI, Prisma
 
-**Server:** Microcontroller ESP32
+**Server:** Microcontroller ESP32 NodeMCU DevKit v1
 
 **Database:** NeonDBc(PostgreSQL)
 
