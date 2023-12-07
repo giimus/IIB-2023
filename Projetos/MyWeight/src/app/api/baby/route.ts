@@ -34,18 +34,24 @@ export async function GET() {
     if (measures[1].weight) {
       if (measures[1].weight - measures[0].weight > 0.1 * measures[1].weight) {
         return NextResponse.json({ measures, problem: true })
+      } else {
+        return NextResponse.json({ measures, problem: false })
       }
     }
 
     if (measures[2].weight) {
       if (measures[2].weight - measures[0].weight > 0.1 * measures[2].weight) {
         return NextResponse.json({ measures, problem: true })
+      } else {
+        return NextResponse.json({ measures, problem: false })
       }
     }
 
     if (measures[3].weight) {
       if (measures[3].weight - measures[0].weight > 0.1 * measures[3].weight) {
         return NextResponse.json({ measures, problem: true })
+      } else {
+        return NextResponse.json({ measures, problem: false })
       }
     }
   }
