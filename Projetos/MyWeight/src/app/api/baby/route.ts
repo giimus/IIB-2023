@@ -13,6 +13,7 @@ export async function POST(req: NextRequest) {
     data: {
       weight: Number(weight.toFixed(2)),
       created_at: formattedDate.toLowerCase(),
+      real_created_at: new Date(),
     },
   })
 
@@ -26,7 +27,7 @@ export async function POST(req: NextRequest) {
 export async function GET() {
   const measures = await prisma.babyMeasures.findMany({
     orderBy: {
-      created_at: 'desc',
+      real_created_at: 'desc',
     },
   })
 
@@ -54,6 +55,8 @@ export async function GET() {
         return NextResponse.json({ measures, problem: false })
       }
     }
+
+    return NextResponse.json({ measures, problem: false })
   }
 
   return NextResponse.json({ status: 404 })
