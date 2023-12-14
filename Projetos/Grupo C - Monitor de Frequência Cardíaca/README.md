@@ -1,0 +1,7 @@
+# Monitor de Frequência Cardíaca
+Este projeto explora o uso do sensor de pulso MAX 30102, em conjunto ao microcontrolador Arduino UNO, a fim de monitorar o número médio de batimentos por minuto (BPM) do usuário. Portanto, o principal objetivo é desenvolver um instrumento útil, de baixa complexidade e custo, que se utiliza de uma técnica alternativa para determinar BPM.
+A fotopletismografia (PPG, do inglês __photoplethysmography_) é uma técnica óptica não invasiva, utilizada pelo MAX 30102, que consiste em emitir luz através da pele e medir o reflexo dessa luz com um fotodetector.  À medida que o sangue é bombeado pelas veias do dedo, a quantidade de luz refletida muda, criando uma forma de onda oscilante, que depende da variação de volume de sangue bombeado decorrente do ciclo cardíaco. Fazendo a medição dessas ondas, pode-se, então, obter a leitura dos batimentos cardíacos.
+
+![Fotopletismografia do dedo. Fonte: ArchDaily - Novo aplicativo do Morpholio Project mede a reação humana ao ambiente construído.](https://images.adsttc.com/media/images/5361/3156/c07a/80d4/3c00/0137/large_jpg/Morpholio_iPhone_App_Pulse_Photoplethysmography_01.jpg?1398878543)
+
+A figura acima ilustra o sinal obtido a partir dessa técnica, onde cada ciclo cardíaco é indicado como um pico. Como o fluxo sanguíneo para a pele pode ser regulado por vários outros sistemas fisiológicos, o PPG também pode ser empregado para monitorar a respiração e hipovolemia e também no cálculo da saturação de oxigênio no sangue e da pressão sanguínea.
